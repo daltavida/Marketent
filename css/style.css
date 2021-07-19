@@ -1,9 +1,49 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
 
 body {
-  font-family: "Inter", sans-serif;
-}
+  font-family: "Inter", sans-serif; }
+
+.navigation {
+  margin: 1.5rem;
+  height: 2em;
+  line-height: 2em; }
+  .navigation a {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #060606;
+    margin-right: 1.5rem; }
+  .navigation .logo {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .navigation .menu {
+    font-size: 4rem;
+    --ionicon-stroke-width: 3rem;
+    vertical-align: -1.5rem; }
+
+.main-nav {
+  padding: 0.5rem 0;
+  float: left;
+  vertical-align: middle; }
+
+.cta {
+  float: right; }
+
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem; }
+
+.btn-primary {
+  background-color: #d8c8f5; }

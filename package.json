@@ -1,0 +1,22 @@
+{
+  "name": "marketent",
+  "version": "1.0.0",
+  "description": "Landing page for customer service and social media management company",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daltavida/Marketent.git"
+  },
+  "author": "Ajay Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daltavida/Marketent/issues"
+  },
+  "homepage": "https://github.com/daltavida/Marketent#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
