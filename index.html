@@ -6,46 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketent</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="navigation">
-      <div class="main-nav">
-        <a href="#" class="logo">Marketent</a>
-        <a href="#">Features</a>
-        <a href="#">Plans</a>
-        <a href="#">About us</a>
-        <a href="#">Reviews</a>
+    <!-- Navigation bar with logo and CTA button -->
+
+    <div class="navbar">
+      <!-- Logo box and links to other pages -->
+
+      <div class="navbar__logobox">
+        <a href="/index.html" class="navbar__logo">Marketent</a>
+        <a href="" class="navbar__navlink">Products</a>
+        <a href="" class="navbar__navlink">Services</a>
+        <a href="" class="navbar__navlink">About</a>
+        <a href="" class="navbar__navlink">Contact</a>
       </div>
-      <div class="cta">
-        <a href="#" class="btn btn-primary">Register</a>
-        <a href="#" class="menu"><ion-icon name="menu-outline"></ion-icon></a>
+
+      <!-- CTA button and hamburger menu -->
+
+      <div class="cta-box">
+        <button class="btn btn__primary">Register</button>
+        <a href="#" class="navbar__menu">
+          <svg class="navbar__icon">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </a>
       </div>
     </div>
-
-    <div class="hero">
-      <div class="heading-box">
-        <h1>Champions of customer service</h1>
-      </div>
-      <div class="hero-image">
-        <img
-          src="img/astronaut.jpg"
-          alt="Black and white artwork of an astronaut flipping a switch"
-        />
-      </div>
-    </div>
-
-    <!-- Ionic icon library import -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
