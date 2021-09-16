@@ -14,7 +14,12 @@ body {
   font-weight: 300; }
 
 h1 {
-  font-size: 8rem; }
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 1; }
+
+h3 {
+  font-size: 2.5rem; }
 
 .navbar {
   display: flex;
@@ -62,13 +67,37 @@ h1 {
   display: grid;
   width: 100%;
   height: calc(100vh - 7rem);
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr max-content;
   grid-template-rows: 1fr min-content min-content 1fr;
-  padding: 10rem 20rem;
-  background-color: aquamarine; }
+  padding: 10rem 30rem;
+  grid-row-gap: 3rem;
+  grid-column-gap: 5rem; }
   .header__img {
-    width: 100%;
+    width: 40vw;
     grid-column: 2 / 3;
     grid-row: 1 / -1; }
   .header__tagline {
     align-self: end; }
+  .header__signup {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr max-content;
+    grid-column-gap: 2rem; }
+  .header__input {
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    background-color: #f0f5f9;
+    transition: all 0.2s;
+    font-size: 1.7rem; }
+    .header__input::placeholder {
+      color: #777777; }
+    .header__input:focus {
+      outline: none;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 1rem 5rem; }
+  .header__disclaimer {
+    color: #aaaaaa;
+    font-size: 1.7rem; }
+    .header__disclaimer a:link,
+    .header__disclaimer a:visited {
+      color: #888888; }
