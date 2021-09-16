@@ -13,9 +13,13 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 300; }
 
+h1 {
+  font-size: 8rem; }
+
 .navbar {
   display: flex;
   padding: 1rem 3rem;
+  height: 7rem;
   align-items: center;
   justify-content: space-between; }
   .navbar__logobox {
@@ -53,3 +57,18 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer; }
+
+.header {
+  display: grid;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr min-content min-content 1fr;
+  padding: 10rem 20rem;
+  background-color: aquamarine; }
+  .header__img {
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1; }
+  .header__tagline {
+    align-self: end; }

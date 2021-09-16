@@ -1,0 +1,20 @@
+.header {
+  display: grid;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr min-content min-content 1fr;
+  padding: 10rem 20rem;
+
+  background-color: aquamarine;
+
+  &__img {
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+
+  &__tagline {
+    align-self: end;
+  }
+}
