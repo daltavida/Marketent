@@ -1,3 +1,11 @@
+@keyframes scrollIndicator {
+  25% {
+    height: 4.5rem;
+    transform: translateY(0); }
+  50% {
+    height: 1.7rem;
+    transform: translateY(2.8rem); } }
+
 *,
 *::before,
 *::after {
@@ -107,6 +115,23 @@ h3 {
     .header__disclaimer a:link,
     .header__disclaimer a:visited {
       color: #888888; }
+  .header__scroll-cue {
+    position: absolute;
+    width: 4rem;
+    height: 7.5rem;
+    border-radius: 100px;
+    background-color: #eeeeee;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__scroll-wheel {
+    width: 1.7rem;
+    height: 1.7rem;
+    position: relative;
+    margin: 1.2rem;
+    border-radius: 10px;
+    background-color: #d9c6fd;
+    animation: scrollIndicator 1.5s infinite; }
 
 .social-media {
   display: grid;
