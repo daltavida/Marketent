@@ -1,0 +1,36 @@
+.social-media {
+  display: grid;
+  padding: 10rem 30rem 10rem 0;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 1rem;
+  grid-column-gap: 10rem;
+
+  &__img {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+
+  &__heading {
+    grid-column: 2 / 4;
+    align-self: end;
+  }
+
+  &__description {
+    grid-column: 2 / 4;
+    font-size: 2rem;
+    line-height: 1.5;
+    align-self: center;
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  &__feature-description {
+    font-size: 1.7rem;
+  }
+}

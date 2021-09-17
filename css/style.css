@@ -18,6 +18,11 @@ h1 {
   font-weight: 600;
   line-height: 1; }
 
+h2 {
+  font-size: 6.5rem;
+  font-weight: 600;
+  line-height: 1; }
+
 h3 {
   font-size: 2.5rem; }
 
@@ -102,3 +107,29 @@ h3 {
     .header__disclaimer a:link,
     .header__disclaimer a:visited {
       color: #888888; }
+
+.social-media {
+  display: grid;
+  padding: 10rem 30rem 10rem 0;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 1rem;
+  grid-column-gap: 10rem; }
+  .social-media__img {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1; }
+  .social-media__heading {
+    grid-column: 2 / 4;
+    align-self: end; }
+  .social-media__description {
+    grid-column: 2 / 4;
+    font-size: 2rem;
+    line-height: 1.5;
+    align-self: center; }
+  .social-media__icon {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 2rem; }
+  .social-media__feature-description {
+    font-size: 1.7rem; }
