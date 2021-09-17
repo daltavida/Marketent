@@ -4,12 +4,13 @@
   height: calc(100vh - 7rem);
   grid-template-columns: 1fr max-content;
   grid-template-rows: 1fr min-content min-content 1fr;
-  padding: 10rem 30rem;
+  padding-left: 30rem;
+  padding-right: 20rem;
   grid-row-gap: 3rem;
   grid-column-gap: 5rem;
 
   &__img {
-    width: 40vw;
+    width: 45vw;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
