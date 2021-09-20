@@ -20,6 +20,8 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-weight: 300; }
+  body ::selection {
+    background: #d9c6fd; }
 
 h1 {
   font-size: 8rem;
@@ -144,26 +146,53 @@ h3 {
 
 .section {
   display: grid;
-  padding: 10rem 30rem 10rem 0;
-  grid-template-columns: 5fr 1fr 1fr;
   grid-template-rows: repeat(3, min-content);
   grid-row-gap: 1rem;
   grid-column-gap: 10rem; }
+  .section__social-media {
+    padding: 10rem 30rem 10rem 0;
+    grid-template-columns: 5fr 1fr 1fr; }
+  .section__growth {
+    padding: 10rem 10rem 10rem 30rem;
+    grid-template-columns: 1fr 1fr 5fr; }
   .section__img {
-    width: 100%; }
+    width: 100%;
+    grid-row: 1 / -1; }
   .section__heading {
-    align-self: end; }
+    align-self: end;
+    margin-top: 5rem;
+    margin-bottom: -3rem; }
   .section__icon {
     width: 6rem;
     height: 6rem;
     margin-bottom: 2rem; }
 
 .social-media__img {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1; }
+  grid-column: 1 / 2; }
 
 .social-media__heading {
   grid-column: 2 / 4; }
 
 .social-media__description {
   grid-column: 2 / 4; }
+
+.growth__img {
+  grid-column: 3 / 4; }
+
+.growth__heading {
+  grid-column: 1 / 3; }
+
+.growth__description {
+  grid-column: 1 / 3; }
+
+.growth__button {
+  align-self: center;
+  margin-right: 2rem;
+  height: 6rem;
+  width: 20rem; }
+
+.growth__details {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  grid-column: 1 / 3; }
