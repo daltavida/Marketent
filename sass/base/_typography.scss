@@ -13,3 +13,23 @@ h2 {
 h3 {
   font-size: 2.5rem;
 }
+
+.description {
+  font-size: 2rem;
+  line-height: 1.5;
+  align-self: center;
+}
+
+.feature-description {
+  font-size: 1.7rem;
+}
+
+.disclaimer {
+  color: #aaaaaa;
+  font-size: 1.7rem;
+
+  a:link,
+  a:visited {
+    color: #888888;
+  }
+}

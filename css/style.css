@@ -1,10 +1,10 @@
 @keyframes scrollIndicator {
   25% {
-    height: 4.5rem;
+    height: 2.25rem;
     transform: translateY(0); }
   50% {
-    height: 1.7rem;
-    transform: translateY(2.8rem); } }
+    height: 0.9rem;
+    transform: translateY(1.4rem); } }
 
 *,
 *::before,
@@ -33,6 +33,21 @@ h2 {
 
 h3 {
   font-size: 2.5rem; }
+
+.description {
+  font-size: 2rem;
+  line-height: 1.5;
+  align-self: center; }
+
+.feature-description {
+  font-size: 1.7rem; }
+
+.disclaimer {
+  color: #aaaaaa;
+  font-size: 1.7rem; }
+  .disclaimer a:link,
+  .disclaimer a:visited {
+    color: #888888; }
 
 .navbar {
   display: flex;
@@ -109,52 +124,46 @@ h3 {
     .header__input:focus {
       outline: none;
       box-shadow: rgba(0, 0, 0, 0.1) 0 1rem 5rem; }
-  .header__disclaimer {
-    color: #aaaaaa;
-    font-size: 1.7rem; }
-    .header__disclaimer a:link,
-    .header__disclaimer a:visited {
-      color: #888888; }
   .header__scroll-cue {
     position: absolute;
-    width: 4rem;
-    height: 7.5rem;
+    width: 2rem;
+    height: 3.75rem;
     border-radius: 100px;
     background-color: #eeeeee;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .header__scroll-wheel {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 0.9rem;
+    height: 0.9rem;
     position: relative;
-    margin: 1.2rem;
+    margin: 0.6rem;
     border-radius: 10px;
     background-color: #d9c6fd;
     animation: scrollIndicator 1.5s infinite; }
 
-.social-media {
+.section {
   display: grid;
   padding: 10rem 30rem 10rem 0;
   grid-template-columns: 5fr 1fr 1fr;
   grid-template-rows: repeat(3, min-content);
   grid-row-gap: 1rem;
   grid-column-gap: 10rem; }
-  .social-media__img {
-    width: 100%;
-    grid-column: 1 / 2;
-    grid-row: 1 / -1; }
-  .social-media__heading {
-    grid-column: 2 / 4;
+  .section__img {
+    width: 100%; }
+  .section__heading {
     align-self: end; }
-  .social-media__description {
-    grid-column: 2 / 4;
-    font-size: 2rem;
-    line-height: 1.5;
-    align-self: center; }
-  .social-media__icon {
+  .section__icon {
     width: 6rem;
     height: 6rem;
     margin-bottom: 2rem; }
-  .social-media__feature-description {
-    font-size: 1.7rem; }
+
+.social-media__img {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1; }
+
+.social-media__heading {
+  grid-column: 2 / 4; }
+
+.social-media__description {
+  grid-column: 2 / 4; }

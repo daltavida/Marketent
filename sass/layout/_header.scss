@@ -44,20 +44,10 @@
     }
   }
 
-  &__disclaimer {
-    color: #aaaaaa;
-    font-size: 1.7rem;
-
-    a:link,
-    a:visited {
-      color: #888888;
-    }
-  }
-
   &__scroll-cue {
     position: absolute;
-    width: 4rem;
-    height: 7.5rem;
+    width: 2rem;
+    height: 3.75rem;
     border-radius: 100px;
     background-color: #eeeeee;
     top: 90%;
@@ -66,10 +56,10 @@
   }
 
   &__scroll-wheel {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 0.9rem;
+    height: 0.9rem;
     position: relative;
-    margin: 1.2rem;
+    margin: 0.6rem;
     border-radius: 10px;
     background-color: $color-primary;
     animation: scrollIndicator 1.5s infinite;
